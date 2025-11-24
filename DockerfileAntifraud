@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS testrunner
+
+WORKDIR /src
+COPY . .
+WORKDIR /src/Antifraud_Service/Antifraud.Tests
+
+CMD ["dotnet", "test", "--logger:trx;LogFileName=antifraud-test-results.trx"]
