@@ -29,6 +29,7 @@ TRANSACTIONAL_ANTIFRAUD/
 - **Crear el tópico transactions:**  `kafka-topics --bootstrap-server kafka:9092 --create --topic transactions --partitions 1 --replication-factor 1`
 - **Crear el tópico transactions-validated:** `kafka-topics --bootstrap-server kafka:9092 --create --topic transactions-validated --partitions 1 --replication-factor 1`
 - **Verificar que los tópicos existen:** `kafka-topics --bootstrap-server kafka:9092 --list`
+- **Salir de la imagen de kafka:** `exit`
 - **Base de Datos SQL Server**
 - **Ejecutar tests de Transaction:** `docker compose run --rm transaction-tests`
 - **Ejecutar tests de Antifraud:** `docker compose run --rm antifraud-tests`
